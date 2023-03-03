@@ -1,20 +1,24 @@
-import Head from 'next/head';
-import Hero from '@/components/Hero/Hero';
-import favicon from '../assets/images/favicon.svg';
+import styled from 'styled-components';
+import Meta from '@/components/Meta';
+import Hero from '@/components/Hero';
+import Menu from '@/components/Menu';
+import Contact from '@/components/Contact';
+
+const Container = styled.div`
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+`;
 
 const Home = () => {
   return (
     <>
-      <Head>
-        <title>WCB Bakery</title>
-        <meta
-          name='description'
-          content='こだわりのパンが勢ぞろいのベーカリー'
-        />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' type='image/svg+xml' href={favicon.src} />
-      </Head>
-      <Hero></Hero>
+      <Meta />
+      <Container>
+        <Hero />
+        <Menu />
+        <Contact />
+      </Container>
     </>
   );
 };

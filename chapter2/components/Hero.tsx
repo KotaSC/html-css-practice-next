@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import bread1 from '../../assets/images/bread1.jpg';
+import bread1 from '../assets/images/bread1.jpg';
 
 const S_Section = styled.section`
   height: 100vh;
+  scroll-snap-align: start;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -19,6 +20,10 @@ const S_Title = styled.h1`
   font-size: 7rem;
   font-weight: lighter;
   margin-bottom: 2rem;
+
+  @media screen and (max-width: 700px) {
+    font-size: 4rem;
+  }
 `;
 
 const S_Intro = styled.p`
