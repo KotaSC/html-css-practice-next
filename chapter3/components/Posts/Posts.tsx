@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import PostTitle from "./PostTitle";
 import Post from "./Post";
+import Button from "../Button/Button";
 
 const S_Container = styled.main`
   @media screen and (min-width: 600px) {
@@ -22,6 +23,7 @@ const Posts = () => {
         dolores stet duo amet eos duis takimata lorem duo elitr amet minim
         invidunt diam.
       </Post>
+      <Button text="続きを読む" />
     </S_Container>
   );
 };
