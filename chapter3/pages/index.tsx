@@ -3,6 +3,7 @@ import Meta from "@/components/Meta/Meta";
 import Container from "@/components/Container/Container";
 import Posts from "@/components/Posts/Posts";
 import Sidebar from "@/components/Sidebar/Sidebar";
+import PageNation from "@/components/PageNation/PageNation";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Posts />
         <Sidebar />
       </Container>
+      <PageNation />
     </>
   );
 }
