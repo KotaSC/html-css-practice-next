@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import SideBox from "./SideBox";
 
 const S_Container = styled.aside`
   @media screen and (min-width: 600px) {
@@ -7,7 +8,11 @@ const S_Container = styled.aside`
 `;
 
 const Sidebar = () => {
-  return <S_Container>Sidebar</S_Container>;
+  return (
+    <S_Container>
+      <SideBox />
+    </S_Container>
+  );
 };
 
 export default Sidebar;
