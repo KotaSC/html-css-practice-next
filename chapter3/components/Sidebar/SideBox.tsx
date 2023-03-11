@@ -41,7 +41,7 @@ const S_SideBox = styled.div`
 const SideBox = () => {
   return (
     <S_SideBox>
-      <h3>Ctegory</h3>
+      <h3>Category</h3>
       <ul>
         <li>
           <a href="#">猫の種類</a>

@@ -2,6 +2,9 @@ import styled from "styled-components";
 import headerImg from "../../assets/images/header.svg";
 
 const S_Header = styled.header`
+  @media screen and (min-width: 600px) {
+    height: 190px;
+  }
   max-width: 1000px;
   margin: 2.5rem auto 0;
   background: url(${headerImg.src});
@@ -10,10 +13,10 @@ const S_Header = styled.header`
 
 const S_PageTitle = styled.h1`
   @media screen and (min-width: 600px) {
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 4rem;
   }
   text-align: center;
-  font-size: 3.75rem;
+  font-size: 2.5rem;
   font-family: "Amatic SC", cursive;
   margin: 1rem 0;
   padding-top: 2rem;

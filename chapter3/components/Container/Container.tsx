@@ -8,6 +8,10 @@ const S_Container = styled.div`
     margin-bottom: 4rem;
     padding: 1rem 2.5rem 2.5rem;
   }
+  background-color: #fff;
+  max-width: 920px;
+  margin: 0 auto;
+  border-radius: 0 0 10px 10px;
 `;
 
 const Container = ({ children }: { children: ReactNode }) => {
